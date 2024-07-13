@@ -1,0 +1,151 @@
+.images-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  position: relative;
+  transition: transform 0.5 ease;
+  will-change: tranform;
+}
+
+.images-container img {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.button-div {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+}
+
+.forground-div {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  backdrop-filter: brightness(40%);
+}
+
+.quote-box {
+  padding-top: 4px;
+  padding: 0px 8px;
+  color: #fefae0;
+  width: 100vw;
+  font-size: 2rem;
+  font-family: " Gothic Medium", "", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+.quote {
+  width: 30vw;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.quote-box span {
+  color: #dda15e;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.booking-button {
+    align-self: center;
+    width: 40vh;
+    padding: 15px 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #bc6c25;
+    color: #fefae0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.booking-button:hover {
+  opacity: 1;
+}
+
+
+.horses-showcase {
+  transform: translateX(100vw);
+  animation: fadeInHorses 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeInHorses {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.card-container {
+  padding: 0px 1rem;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.image-div {
+  position: relative;
+  width: fit-content;
+}
+
+.image-div img {
+  height: 35vh;
+  width: 35vh;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: all 0.5s ease-in;
+}
+
+.image-div img:hover {
+  filter: brightness(100%);
+}
+
+.image-div p {
+  font-weight: 600;
+  position: absolute;
+  color: white;
+  bottom: 1px;
+  right: 1px;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase-heading {
+  padding-left: 12px;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.horses-showcase h2 {
+  color: #fefae0;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
