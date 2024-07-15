@@ -1,105 +1,111 @@
 .form-container {
-    width: 100vw;
-    position: fixed;
-    height: 100vh;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    z-index: 10;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .form {
-    height: 96%;
-    width: 40vw;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    background-color: #edf2f4;
-    backdrop-filter: blur(1px);
+  height: 96%;
+  width: 40vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #edf2f4;
+  backdrop-filter: blur(1px);
 }
 
 .crossIcon-div {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 form select {
-    color: #2b2d42;
-    width: 100%;
-    outline: none;
-    padding: 10px 6px;
-    background-color: transparent;
+  color: #2b2d42;
+  width: 100%;
+  outline: none;
+  padding: 10px 6px;
+  background-color: transparent;
 }
 
 .date-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .date-time-container {
-    border: 1px solid black;
-    padding-top: 4px;
-    padding: 0px 4px;
+  border: 1px solid black;
+  padding-top: 4px;
+  padding: 0px 4px;
 }
 
 .Date-label-div {
-    color: #2b2d42;
-    display: flex;
-    justify-content: space-between;
+  color: #2b2d42;
+  display: flex;
+  justify-content: space-between;
 }
 
-.name-container, .email-container, .phone-container {
-    display: flex;
-    flex-direction: column;
-    color: #2b2d42;
+.name-container,
+.email-container,
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  color: #2b2d42;
 }
 
 .form div input {
-    height: 30px;
-    padding: 16px 4px;
-    outline: none;
-    cursor: pointer; 
-    border-radius: 5px;
-    border: 1px solid gray;
-    font-size: 1rem;   
-    background-color: transparent;
+  height: 30px;
+  padding: 16px 4px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 1rem;
+  background-color: transparent;
 }
 
 .form div label {
-    font-size: 15px;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .submitButton {
-    padding: 10px 20px;;
-    align-self: flex-end;
-    border-radius: 20px;
-    border: none;
-    background-color: #d90429;
-    color: white;
-    box-shadow: 1rem;
+  padding: 10px 20px;
+  align-self: flex-end;
+  border-radius: 20px;
+  border: none;
+  background-color: #d90429;
+  color: white;
+  box-shadow: 1rem;
 }
 
 .invite {
-    height: 20vh;
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
+  height: 20vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .invite-div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.invite-div p {
-    
+.error {
+  color: red;
+}
+
+.error-field {
+  border: 1px solid red !important;
 }
