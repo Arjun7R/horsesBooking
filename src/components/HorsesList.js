@@ -1,5 +1,10 @@
 const horses = [
   {
+    id: 0,
+    name: "Select",
+    image: ``,
+  },
+  {
     id: 1,
     name: "Apollo",
     image: `/assets/horse-1.jpg`,

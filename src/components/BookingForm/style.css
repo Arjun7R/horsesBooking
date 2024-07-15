@@ -44,7 +44,7 @@ form select {
 }
 
 .date-time-container {
-  border: 1px solid black;
+  border: 1px solid   ;
   padding-top: 4px;
   padding: 0px 4px;
 }
@@ -100,6 +100,7 @@ form select {
 .invite-div {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
 .error {
