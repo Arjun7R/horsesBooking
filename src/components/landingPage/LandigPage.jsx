@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import horses from "../../components/HorsesList";
+import horses from "../HorsesList";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
-function LandigPage({isBooking}) {
+function LandigPage({ isBooking }) {
   const [currentImage, setCurrentImage] = useState(1);
 
   useEffect(() => {
@@ -20,9 +20,11 @@ function LandigPage({isBooking}) {
       }
     }
   }, [currentImage, isBooking]);
+
+  const mapedHorses = horses.filter((horse) => horse.id !== 0);
   return (
     <div className="landing-page-container">
-      <ToastContainer style={{display:"flex", alignItems:"center"}} />
+      <ToastContainer style={{ display: "flex", alignItems: "center" }} />
       <div className="images-container">
         <img src={`/assets/background-${currentImage}.jpg`} alt="" />
         <div className="forground-div">
@@ -32,11 +34,7 @@ function LandigPage({isBooking}) {
               <span className=""> Good Horse</span>..
             </p>
             <Link to={"/bookingForm"}>
-            <button
-              className="booking-button"
-            >
-              Book Now
-            </button>
+              <button className="booking-button">Book Now</button>
             </Link>
           </div>
           <div className="">
@@ -45,7 +43,7 @@ function LandigPage({isBooking}) {
                 <h2>Our Avilable Horses</h2>
               </div>
               <div className="card-container">
-                {horses?.map((horse, index) => (
+                {mapedHorses?.map((horse, index) => (
                   <div className="image-div" key={horse.id}>
                     <img src={horse.image} alt="this is horse image" />
                     <p>{horse.name}</p>

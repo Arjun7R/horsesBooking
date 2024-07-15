@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import horses from "../HorsesList";
 import { RxCross2 } from "react-icons/rx";
 import axios from "axios";
@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { url, emailRegex, nameRegex, phoneRegex } from "../../utils/Utils";
-
 
 function BookingForm({}) {
   const [date, setDate] = useState("");
@@ -154,18 +153,23 @@ function BookingForm({}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm() && Object.values(formData).every(item => item.errorMessage == "")) {
-      postBookingData()
+    if (
+      validateForm() &&
+      Object.values(formData).every((item) => item.errorMessage == "")
+    ) {
+      postBookingData();
       navigate("/");
       toast.success(
         <div className="invite">
           <div className="invite-div">
-            <label htmlFor="">Horse Name : </label>
+            <label style={{ color: "brown" }} htmlFor="">
+              Horse Name :{" "}
+            </label>
             <label style={{ color: "#283618" }} htmlFor="">
               {formData.selectedHorse.value}
             </label>
           </div>
-          <p style={{color:"brown"}}>Thanks For Booking</p>
+          <p style={{ color: "brown" }}>Thanks For Booking</p>
         </div>
       );
     }
@@ -195,7 +199,11 @@ function BookingForm({}) {
             <p className="error">{formData?.selectedHorse?.errorMessage}</p>
           )}
         </div>
-        <div className={`date-time-container ${formData?.date?.errorMessage && "error-field"}`}>
+        <div
+          className={`date-time-container ${
+            formData?.date?.errorMessage && "error-field"
+          }`}
+        >
           <div className="Date-label-div">
             <label htmlFor="">Choose Date</label>
             {date !== "" && <label htmlFor="">Time</label>}
@@ -210,11 +218,13 @@ function BookingForm({}) {
               className=""
               min={minDate}
             />
-            {date !== "" && <input
-              value={time}
-              onChange={(e) => handleTimeInput(e.target.value)}
-              type="time"
-            />}
+            {date !== "" && (
+              <input
+                value={time}
+                onChange={(e) => handleTimeInput(e.target.value)}
+                type="time"
+              />
+            )}
           </div>
         </div>
         {formData?.date?.errorMessage && (

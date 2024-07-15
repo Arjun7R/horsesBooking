@@ -44,8 +44,8 @@
   justify-content: space-between;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeIn 1s ease-out forwards;
-  animation-delay: 1.4s;
+  animation: fadeIn 0.7s ease-out forwards;
+  animation-delay: 0.7s;
 }
 
 .quote {
@@ -54,8 +54,8 @@
 
 @keyframes fadeIn {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -66,34 +66,33 @@
 }
 
 .booking-button {
-    align-self: center;
-    width: 40vh;
-    padding: 15px 0px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-color: #bc6c25;
-    color: #fefae0;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    opacity: 0.9;
+  align-self: center;
+  width: 40vh;
+  padding: 15px 0px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #bc6c25;
+  color: #fefae0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
 .booking-button:hover {
   opacity: 1;
 }
 
-
 .horses-showcase {
   transform: translateX(100vw);
-  animation: fadeInHorses 1s ease-out forwards;
+  animation: fadeInHorses 0.7s ease-out forwards;
   animation-delay: 0.7s;
 }
 
 @keyframes fadeInHorses {
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -132,7 +131,7 @@
   font-size: 2rem;
   text-align: center;
   letter-spacing: 4px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .showcase-heading {
@@ -147,5 +146,5 @@
 .horses-showcase h2 {
   color: #fefae0;
   font-size: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -44,7 +44,7 @@ form select {
 }
 
 .date-time-container {
-  border: 1px solid   ;
+  border: 1px solid;
   padding-top: 4px;
   padding: 0px 4px;
 }
@@ -88,19 +88,6 @@ form select {
   background-color: #d90429;
   color: white;
   box-shadow: 1rem;
-}
-
-.invite {
-  height: 20vh;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.invite-div {
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }
 
 .error {

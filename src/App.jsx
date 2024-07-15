@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import BookingForm from './components/BookingForm/BookingForm'
-import TempForm from './components/TempForm'
-import LandigPage from './pages/landingPage/LandigPage'
+import LandigPage from './components/landingPage/LandigPage';
 import { Outlet } from 'react-router-dom';
 
 function App() {
