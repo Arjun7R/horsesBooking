@@ -24,7 +24,7 @@ function LandigPage({isBooking}) {
     <div className="landing-page-container">
       <ToastContainer style={{display:"flex", alignItems:"center"}} />
       <div className="images-container">
-        <img src={`./public/assets/background-${currentImage}.jpg`} alt="" />
+        <img src={`/assets/background-${currentImage}.jpg`} alt="" />
         <div className="forground-div">
           <div className="quote-box">
             <p className="quote">
